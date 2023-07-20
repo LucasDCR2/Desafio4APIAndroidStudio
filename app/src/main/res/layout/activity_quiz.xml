@@ -1,0 +1,62 @@
+<!-- res/layout/activity_quiz.xml -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="QUIZ"
+            android:background="#535659"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp" />
+
+        <LinearLayout
+            android:id="@+id/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lista de opções de resposta -->
+        <LinearLayout
+            android:id="@+id/linearLayoutOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- As opções de resposta serão adicionadas dinamicamente aqui -->
+        </LinearLayout>
+        </LinearLayout>
+        <!-- Botão "Próxima pergunta" -->
+        <Button
+            android:id="@+id/btnNextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próxima Pergunta"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

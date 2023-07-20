@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- button_pressed.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#4B4A4C" /> <!-- Cor de fundo quando o botão está no estado pressionado -->
+    <corners android:radius="8dp" /> <!-- Cantos arredondados do botão -->
+</shape>
