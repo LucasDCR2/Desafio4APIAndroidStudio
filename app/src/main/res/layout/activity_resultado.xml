@@ -7,37 +7,61 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewResumo2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Resumo das Respostas"
-            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Resultado do Quiz"
+            android:background="#535659"
+            android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal" />
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/grade"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutResumo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <!-- Aqui serão adicionados dinamicamente os resumos das respostas do usuário e as respostas corretas -->
+
+            </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayoutResumo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp">
-
-            <!-- Aqui serão adicionados dinamicamente os resumos das respostas do usuário e as respostas corretas -->
-
-        </LinearLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnFinish2"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Finalizar"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="16dp" />
 
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/save"
+            android:layout_marginTop="16dp" />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
 
