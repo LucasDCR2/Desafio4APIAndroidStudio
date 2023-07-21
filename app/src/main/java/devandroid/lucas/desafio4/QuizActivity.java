@@ -109,10 +109,13 @@ public class QuizActivity extends AppCompatActivity {
                         int selectedOptionIndex = v.getId();
                         String selectedOption = opcoesEmbaralhadas.get(selectedOptionIndex);
 
+
                         // Obtenha o índice da opção correta (right_option)
                         int correctOptionIndex = questaoAtual.getRightOption();
                         String correctOption = questaoAtual.getOptions().get(correctOptionIndex);
+
                         boolean isCorrect = selectedOption.equals(correctOption);
+                        questaoAtual.setSelectedOption(selectedOption);
 
                         if (isCorrect) {
                             buttonOpcao.setBackgroundColor(ContextCompat.getColor(QuizActivity.this, R.color.green));

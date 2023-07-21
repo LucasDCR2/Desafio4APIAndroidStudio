@@ -1,21 +1,43 @@
-<!-- res/layout/activity_resultado.xml -->
-
-<LinearLayout
+<!-- activity_resultado.xml -->
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewScore"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <!-- Add other UI elements or content here if needed -->
+        <TextView
+            android:id="@+id/textViewResumo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumo das Respostas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
 
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutResumo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Aqui serão adicionados dinamicamente os resumos das respostas do usuário e as respostas corretas -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -8,6 +8,8 @@ public class Question {
     private int right_option;
     private int selectedOptionIndex = -1;
 
+    private String selectedOption;
+
     public String getQuestion() {
         return question;
     }
@@ -38,5 +40,13 @@ public class Question {
 
     public void setSelectedOptionIndex(int selectedOptionIndex) {
         this.selectedOptionIndex = selectedOptionIndex;
+    }
+
+    public String getSelectedOption() {
+        return selectedOption;
+    }
+
+    public void setSelectedOption(String selectedOption) {
+        this.selectedOption = selectedOption;
     }
 }
